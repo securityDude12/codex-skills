@@ -1,0 +1,7 @@
+interface:
+  display_name: "Recon Fingerprinting"
+  short_description: "Authorized web recon and stack ID"
+  default_prompt: "Use $recon-fingerprinting to fingerprint this authorized in-scope target URL."
+
+policy:
+  allow_implicit_invocation: true

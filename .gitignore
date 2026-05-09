@@ -1,0 +1,28 @@
+.DS_Store
+Thumbs.db
+
+# Local editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local runtime output
+*.log
+*.tmp
+*.cache
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Recon output should not be committed
+scans/
+reports/
+outputs/
+artifacts/
+loot/

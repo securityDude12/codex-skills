@@ -1,0 +1,7 @@
+interface:
+  display_name: "Web App Mapping"
+  short_description: "Map authorized web app attack surface"
+  default_prompt: "Use $web-app-mapping to map this authorized in-scope web application and produce an endpoint inventory."
+
+policy:
+  allow_implicit_invocation: true

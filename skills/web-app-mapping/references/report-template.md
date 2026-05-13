@@ -139,3 +139,9 @@ Include:
 - soft-404 or SPA ambiguity
 - CDN/WAF/rate-limit effects
 - archived URLs not live-confirmed
+
+## Step-Up Offer
+
+Include this section only after the initial report is complete.
+
+State whether step-up work is useful and list the specific follow-up checks that are justified by the report. Ask the user to confirm scope, auth mode, rate/depth limits, exclusions, and authorization before any step-up action begins.

@@ -82,3 +82,9 @@ Use:
 - inconclusive
 
 List only meaningful limitations, such as auth not tested, CDN masking, excluded paths, unstable responses, or low-volume discovery limits.
+
+## Step-Up Offer
+
+Include this section only after the initial report is complete.
+
+State whether step-up work is useful and list the specific follow-up checks that are justified by the report. Ask the user to confirm scope, rate limits, exclusions, and authorization before any step-up action begins.

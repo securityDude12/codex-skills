@@ -240,6 +240,29 @@ Rules:
 
 ---
 
+## Step-Up Session
+
+Offer a step-up session only after the initial recon report has been created and delivered.
+
+Do not begin step-up work automatically. Ask whether the user wants to step up the session, then require explicit confirmation of:
+- target URL or domain
+- allowed host and path scope
+- active probing limits
+- excluded paths, hosts, or methods
+- whether additional endpoint discovery is allowed
+
+Step-up options for this skill:
+- validate redirects, headers, TLS, DNS, CDN, and proxy behavior more thoroughly
+- compare multiple user-provided hostnames or subdomains that are already in scope
+- check obvious standard metadata endpoints at low volume
+- produce a hardened infrastructure summary and follow-on targets for `web-app-mapping`
+
+Step-up work must remain non-destructive reconnaissance. Do not broaden scope, run high-rate discovery, fuzz parameters, attempt credentials, or exploit findings.
+
+If this skill is used inside an app or workflow, keep the Step Up action disabled until an initial report exists. The confirmation screen must show the proposed checks, target scope, rate limits, exclusions, and authorization requirement before execution.
+
+---
+
 ## Rules
 
 - stay within scope

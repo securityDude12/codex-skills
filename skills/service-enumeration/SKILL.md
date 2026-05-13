@@ -94,7 +94,7 @@ Not allowed:
 - bypassing access controls
 - downloading or traversing file shares beyond minimal metadata confirmation
 - changing directory, share, device, or service state
-- using Metasploit exploitation modules
+- using exploitation frameworks, exploit modules, or proof-of-exploit tooling
 - generating custom attack automation for exploitation or credential attacks
 
 ---
@@ -196,7 +196,7 @@ Do not call something a vulnerability unless current evidence proves the conditi
 - do not install tools, download wordlists, or modify system configuration without approval
 - do not run broad `nmap -A`, UDP sweeps, host discovery, or range scans from this skill
 - use `nmap` only for a known host and known port when a named safe script answers a specific enumeration question
-- avoid Metasploit for this phase
+- avoid exploitation frameworks and exploit modules for this phase
 - do not use TLS verification bypass flags unless the user explicitly asks for TLS troubleshooting; label any such result clearly
 
 ---
@@ -215,6 +215,31 @@ Return:
 8. confidence labels and limitations
 
 Keep reports factual and concise. Distinguish confirmed observations from likely or possible interpretations. Redact operator-local details and secret values.
+
+---
+
+## Step-Up Session
+
+Offer a step-up session only after the initial service enumeration report has been created and delivered.
+
+Do not begin step-up work automatically. Ask whether the user wants to step up the session, then require explicit confirmation of:
+- target hosts, domains, or IPs
+- services and ports in scope
+- allowed and excluded protocols
+- auth state and whether approved read-only credentials or community strings are supplied
+- rate and timing limits
+- maximum depth for metadata, share, export, or directory review
+
+Step-up options for this skill:
+- perform credentialed read-only enumeration for specific services
+- deepen SMB, NFS, SNMP, LDAP, DNS, SMTP, RPC, VPN, or VoIP metadata review
+- validate exposed share, export, policy, or management metadata to an approved shallow depth
+- correlate identity, topology, resource, mail, DNS, and management-service signals across the scoped services
+- produce a prioritized course of action for follow-on manual validation or hardening review
+
+Step-up work must remain read-only enumeration and correlation. Do not exploit, guess credentials, capture authentication material, retrieve file contents, mount filesystems, harvest accounts at scale, or expand beyond approved services.
+
+If this skill is used inside an app or workflow, keep the Step Up action disabled until an initial report exists. The confirmation screen must show the selected findings, proposed checks, target services, auth mode, rate limits, depth limits, exclusions, and authorization requirement before execution.
 
 ---
 

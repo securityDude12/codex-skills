@@ -244,3 +244,28 @@ Keep the report factual. Distinguish confirmed observations from likely or possi
 
 Do not call something a vulnerability unless the current phase actually proves it. Prefer phrases such as `candidate area`, `manual testing target`, or `possible hardening gap`.
 Redact operator-local details and secret values.
+
+---
+
+## Step-Up Session
+
+Offer a step-up session only after the initial mapping report has been created and delivered.
+
+Do not begin step-up work automatically. Ask whether the user wants to step up the session, then require explicit confirmation of:
+- target URL or domain
+- allowed host and path scope
+- auth state and whether approved credentials are supplied
+- rate and crawl depth limits
+- excluded paths, methods, forms, or workflows
+- whether archived URLs, JavaScript extraction, API docs, or GraphQL introspection are allowed
+
+Step-up options for this skill:
+- perform authenticated mapping with user-supplied read-only credentials
+- expand route and API inventory from frontend JavaScript, OpenAPI files, sitemaps, and declared manifests
+- deepen parameter, cookie, and header inventories
+- build an app workflow map for login, session, account, admin, API, and file-handling surfaces
+- produce a prioritized manual-testing candidate list grouped by auth, API, state-changing endpoints, uploads, debug interfaces, and exposed artifacts
+
+Step-up work must remain mapping and evidence collection. Do not exploit, bypass access controls, brute force, run high-rate fuzzing, submit state-changing forms, or perform vulnerability payload testing.
+
+If this skill is used inside an app or workflow, keep the Step Up action disabled until an initial report exists. The confirmation screen must show the selected findings, proposed checks, target scope, auth mode, rate limits, exclusions, and authorization requirement before execution.

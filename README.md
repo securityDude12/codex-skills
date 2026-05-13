@@ -1,6 +1,6 @@
 # Codex Skills
 
-Personal Codex skill library.
+AI-assisted security assessment and automation skills built with Codex CLI.
 
 ## Skills
 
@@ -39,6 +39,10 @@ rsync -a skills/recon-fingerprinting/ ~/.agents/skills/recon-fingerprinting/
 rsync -a skills/service-enumeration/ ~/.agents/skills/service-enumeration/
 rsync -a skills/web-app-mapping/ ~/.agents/skills/web-app-mapping/
 ```
+
+## Step-Up Sessions
+
+Each skill starts with a bounded initial report. After that report is complete, the skill can offer a step-up session for deeper authorized review, but only after the user explicitly confirms scope, rate limits, exclusions, and allowed methods.
 
 ## Safety
 

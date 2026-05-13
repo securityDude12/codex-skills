@@ -1,0 +1,7 @@
+interface:
+  display_name: "Service Enumeration"
+  short_description: "Enumerate authorized known services"
+  default_prompt: "Use $service-enumeration to enumerate these authorized in-scope services and produce a prioritized course of action."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Port Service Discovery"
+  short_description: "Find open TCP ports on authorized hosts"
+  default_prompt: "Use $port-service-discovery to discover open TCP ports and light service metadata for this authorized in-scope target, then recommend handoffs."
+
+policy:
+  allow_implicit_invocation: true

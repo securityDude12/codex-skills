@@ -7,6 +7,7 @@ AI-assisted security assessment and automation skills built with Codex CLI.
 - `recon-fingerprinting` - Authorized web reconnaissance for infrastructure, headers, redirects, stack indicators, DNS signals, and light endpoint discovery.
 - `service-enumeration` - Authorized post-scanning enumeration for known services, protocol metadata, exposed resource signals, and prioritized follow-on actions.
 - `web-app-mapping` - Authorized application-layer mapping for endpoints, APIs, parameters, cookies, auth surfaces, artifacts, and manual-testing candidates.
+- `port-service-discovery` - Authorized bounded TCP port discovery and light service identification for handoff to recon, mapping, or service enumeration.
 
 ## Layout
 
@@ -27,6 +28,11 @@ skills/
     agents/openai.yaml
     codex-limitations.md
     references/
+  port-service-discovery/
+    SKILL.md
+    agents/openai.yaml
+    codex-limitations.md
+    references/
 ```
 
 ## Install Locally
@@ -38,6 +44,7 @@ mkdir -p ~/.agents/skills
 rsync -a skills/recon-fingerprinting/ ~/.agents/skills/recon-fingerprinting/
 rsync -a skills/service-enumeration/ ~/.agents/skills/service-enumeration/
 rsync -a skills/web-app-mapping/ ~/.agents/skills/web-app-mapping/
+rsync -a skills/port-service-discovery/ ~/.agents/skills/port-service-discovery/
 ```
 
 ## Step-Up Sessions

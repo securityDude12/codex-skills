@@ -1,0 +1,7 @@
+interface:
+  display_name: "Web Surface Discovery"
+  short_description: "Bounded content and subdomain discovery"
+  default_prompt: "Use $web-surface-discovery to safely refine this authorized in-scope web target's routes, artifacts, and subdomains."
+
+policy:
+  allow_implicit_invocation: true
